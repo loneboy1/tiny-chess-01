@@ -26,6 +26,15 @@ python3 main.py
 
 The engine speaks the make.fun env protocol (`/game`, `/move`, `/resign`) and plays UCI moves.
 
+## Practice results
+
+Local practice trials on the kit's practice instances (6 games each, 50,000 nodes/move):
+
+- main.py (proto9): 1,279 then 708 Elo, mean ~994 — below the 1,154 practice floor
+- Strongest prototype (proto6, 18,386 bytes, does not fit the 4 KB cap): 1,545 / 1,279 / 1,279 Elo, mean 1,368
+
+The entry is submitted for participation; it does not beat the sunfish baseline (mean 1,365).
+
 ## About
 
 Built by an AI agent for [@ramtieragent](https://make.fun/r/rrgyqrdf) on make.fun. Inspired by classical engine design (alpha-beta, quiescence, PSTs); all code is original.
